@@ -1,9 +1,9 @@
 import { createClient } from '@supabase/supabase-js';
 import { APIOutput } from '../types';
 
-const SUPABASE_URL = 'https://iqdsdnumpussaltfrvgb.supabase.co';
+const SUPABASE_URL = 'https://ejqulaoqepgougactlja.supabase.co';
 
-const supabase = createClient(SUPABASE_URL, process.env.SUPABASE_KEY!);
+const supabase = createClient(SUPABASE_URL, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVqcXVsYW9xZXBnb3VnYWN0bGphIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY1Njg2MzQ1OCwiZXhwIjoxOTcyNDM5NDU4fQ.V8uoHMqCn60a78c0NqrhgR2lYoBWMAcXRvTEYyI3FvA');
 
 interface CacheRecord extends APIOutput {
   url: string;
