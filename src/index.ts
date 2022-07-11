@@ -9,7 +9,7 @@ const app = express();
 const port = Number(process.env.PORT || 8080);
 
 if (process.env.ENVIRONMENT === 'production') {
-  var redis = require('redis').createClient('6379', 'redis://red-cabrnlvh8vl8cjdfc0p0:6379');
+  var redis = require('redis').createClient('6379', 'redis://red-cabrnlvh8vl8cjdfc0p0');
 } else {
   var redis = require('redis').createClient();
 }
