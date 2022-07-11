@@ -20,7 +20,6 @@ const config: AxiosRequestConfig = {
 
 export const getMetadata = async (url: string): Promise<MetaResult | null> => {
   try {
-    console.log(await parser(url));
     const result = (await parser(url, config)) as MetaResult;
     return result;
   } catch (err) {
